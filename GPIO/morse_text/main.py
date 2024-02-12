@@ -11,7 +11,10 @@ def pulse(pin, high_time, low_time):
     maak de pin laag, en wacht nog low_time
     """
 
-    # Kopier hier je pulse implementatie
+    pin.value(1)
+    time.sleep(high_time)
+    pin.value(0)
+    time.sleep(low_time)
 
 
 def morse(pin, dot_length, text):
